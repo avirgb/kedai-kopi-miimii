@@ -484,8 +484,8 @@ footer .credits a {
 
     .menus .row .menus-card img {
         border-radius: 20%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         object-fit: cover;
     }
 
