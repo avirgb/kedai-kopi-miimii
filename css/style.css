@@ -704,9 +704,9 @@ footer .credits a {
     }
 
     .modal-content img {
-        height: 10rem;
-        /* margin-right: 2rem;
-        margin-bottom: 2rem; */
+        height: 20rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
     }
 
     
@@ -716,5 +716,11 @@ footer .credits a {
 @media (max-width: 450px) {
     html {
         font-size: 55%;
+    }
+
+    .modal-content img {
+        height: 10rem;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
     }
 }
