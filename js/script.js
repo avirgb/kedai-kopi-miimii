@@ -20,3 +20,10 @@ document.querySelector('#search-btn').onclick = (e) => {
     searchBox.focus();
     e.preventDefault();
 }
+
+const searchBtn = document.querySelector('#search-btn');
+document.addEventListener('click', function (e) {
+    if (!searchBtn.contains(e.target) && !searchForm.contains(e.target)) {
+        searchForm.classList.remove('active');
+    }
+});
