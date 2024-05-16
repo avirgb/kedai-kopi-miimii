@@ -41,3 +41,25 @@ document.addEventListener('click', function (e) {
         shoppingCart.classList.remove('active');
     }
 });
+
+// Modal
+const itemDetailModal = document.querySelector('#item-detail-modal');
+const itemDetailBtns = document.querySelectorAll('.item-detail-btn');
+
+itemDetailBtns.forEach((btn) => {
+    btn.onclick = (e) => {
+        itemDetailModal.style.display ='flex';
+        e.preventDefault();
+    }
+})
+
+document.querySelector('.modal .close-icon').onclick = (e) => {
+    itemDetailModal.style.display ='none';
+    e.preventDefault();
+}
+
+window.onclick = (e) => {
+    if (e.target === itemDetailModal) {
+        itemDetailModal.style.display = 'none';
+    }
+}

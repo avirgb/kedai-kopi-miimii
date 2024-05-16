@@ -529,7 +529,7 @@ footer .credits a {
 /* Modal Box */
 /* Item Detail */
 .modal {
-    display: flex;
+    display: none;
     position: fixed;
     z-index: 9999;
     left: 0;
@@ -548,6 +548,18 @@ footer .credits a {
     padding: 1.2rem;
     border: 1px solid #666;
     width: 60%;
+    animation: animationModal 0.5s;
+}
+
+@keyframes animationModal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 .modal-container .close-icon {
@@ -561,7 +573,9 @@ footer .credits a {
 }
 
 .modal-content img {
-    height: 20rem;
+    height: 16rem;
+    width: 16rem;
+    object-fit: cover;
     margin-right: 2rem;
     margin-bottom: 2rem;
 }
@@ -581,6 +595,8 @@ footer .credits a {
     margin-top: 1rem;
     padding: 1rem 1.6rem;
 }
+
+
 
 
 /* MEDIA QUERY */
@@ -719,7 +735,7 @@ footer .credits a {
     }
 
     .modal-content img {
-        height: 13rem;
+        height: 14rem;
         margin-right: 2rem;
         margin-bottom: 2rem;
     }
