@@ -59,7 +59,8 @@ body {
     margin: 0 1rem;
 }
 
-.navbar .navbar-nav a:hover{
+.navbar .navbar-nav a:hover,
+.navbar .navbar-nav a.aktif{
     color: var(--primary_color);
 }
 
@@ -72,7 +73,8 @@ body {
     transition: 0.2s linear;
 }
 
-.navbar .navbar-nav a:hover::after{
+.navbar .navbar-nav a:hover::after,
+.navbar .navbar-nav a.aktif::after{
     transform: scaleX(0.5);
 }
 
@@ -436,7 +438,7 @@ body {
     font-weight: bold;
 }
 
-.products .product-price span{
+/* .products .product-price span{
     text-decoration: line-through;
     font-weight: lighter;
     font-size: 1rem;
@@ -444,7 +446,7 @@ body {
     color: var(--secondary_color);
     font-style: italic;
     font-size: 1.2rem;
-} 
+}  */
 
 /* Cart */
 
