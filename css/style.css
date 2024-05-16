@@ -719,11 +719,11 @@ footer .credits a {
         flex-wrap: wrap;
     }
 
-    .modal-content img {
+    /* .modal-content img {
         height: 20rem;
         margin-right: 2rem;
         margin-bottom: 2rem;
-    }
+    } */
 
     
 }
@@ -734,9 +734,9 @@ footer .credits a {
         font-size: 55%;
     }
 
-    .modal-content img {
+    /* .modal-content img {
         height: 15rem;
         margin-right: 2rem;
         margin-bottom: 2rem;
-    }
+    } */
 }
